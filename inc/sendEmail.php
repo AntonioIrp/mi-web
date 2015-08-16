@@ -32,17 +32,17 @@ if($_POST) {
 	$message .= "Email address: " . $email . "<br />";
    $message .= "Message: <br />";
    $message .= $contact_message;
-   $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
+   $message .= "<br /> ----- <br /> This email was sent from your site's yoantonioroldan.esy.es contact form. <br />";
 
    // Set From: header
    $from =  $name . " <" . $email . ">";
 
    // Email Headers
 	//$headers = "From: " . $from . "\r\n";
-	$headers = "From: " . $email . "\r\n";
+	$headers = "From: " . "antonio_irp@hotmail.com" . "\r\n";
 	$headers .= "Reply-To: ". $email . "\r\n";
  	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 
    if (!$error) {
