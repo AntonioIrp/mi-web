@@ -1,0 +1,27 @@
+{
+    "name": "AntonioIrp/PhpServicesKit",
+    "description": "PhpServicesKit",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Antonio",
+            "email": "antonio_irp@hotmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Configuration\\": "./config",
+            "Messages\\": "./libs/Provider/Messages",
+            "Validators\\": "./libs/Provider/Validators",
+            "PhpServicesKit\\SignupKit\\": "./src/PhpServicesKit/SignupKit",
+            "PhpServicesKit\\LoginKit\\": "./src/PhpServicesKit/LoginKit",
+            "PhpServicesKit\\DbConnection\\": "./src/PhpServicesKit/DbConnection",
+            "PhpServicesKit\\PasswordRecovery\\": "./src/PhpServicesKit/PasswordRecovery"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "v5.2.9",
+        "ircmaxell/password-compat": "1.0.3"
+    }
+}
